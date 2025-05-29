@@ -7,7 +7,7 @@
   margin: 0 auto;
   flex-wrap: wrap;
   margin-top: 6rem;
-  border-bottom: 2px solid #D3D3D3;
+  border-bottom: 2px solid #d3d3d3;
 }
 
 .textContainer {
@@ -86,4 +86,18 @@
 
 .inactive {
   background: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0rem 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .textContainer {
+  text-align: center;
+}
 }

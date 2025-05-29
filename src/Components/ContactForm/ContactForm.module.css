@@ -44,10 +44,9 @@
   
   input,
   textarea {
-    width: 100%;
     padding: 1rem;
     border-radius: 10px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s;
