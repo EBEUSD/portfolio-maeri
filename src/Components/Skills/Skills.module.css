@@ -1,0 +1,82 @@
+.skillsSection {
+  background-color: #f9f9f9;
+  padding: 0;
+  text-align: center;
+}
+
+.background {
+  background-image: url("https://statsbomb.com/wp-content/uploads/2024/09/Wave_Texture_LightInk-min.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 2rem;
+  margin-top: 4rem;
+  color: white;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0;
+  max-width: 1364px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem 0rem;
+  max-width: 1364px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .background {
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+}

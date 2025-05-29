@@ -1,0 +1,147 @@
+.container {
+  max-width: 1364px;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  color: #1e1e1e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.card {
+  background-color: #d3d3d3;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.image {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+}
+
+.content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #000;
+  margin-top: 0px;
+  text-align: left;
+}
+
+.detailsBtn {
+  align-self: flex-start;
+  background-color: #ffffff;
+  color: #111827;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.8rem;
+}
+
+.detailsBtn:hover {
+  background-color: #e5e7eb;
+}
+
+.loadMoreCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: rgba(41, 33, 33, 0.3);
+  color: #fff;
+}
+
+.loadMoreCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(6px) contrast(0.8) brightness(0.8);
+  -webkit-backdrop-filter: blur(6px) contrast(0.8) brightness(0.8);
+  filter: blur(1.5px) grayscale(0.7) brightness(0.6);
+  z-index: 1;
+}
+
+
+.viewMoreBtn {
+  position: absolute;
+  z-index: 2; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #28c33f;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.viewMoreBtn:hover {
+  background-color: #10B981;
+  color: white;
+}
+
+.loadMoreCard:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    padding: 16px;
+  }
+
+  .container {
+    padding-top: 2rem;
+  }
+  
+  .title {
+    text-align: center;
+  }
+
+  .viewMoreBtn {
+    padding: 0.3rem 2.3rem;
+    font-size: 0.9rem;
+  }
+}

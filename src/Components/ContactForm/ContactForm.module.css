@@ -1,0 +1,83 @@
+.contactSection {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.3s ease, transform 1.3s ease;
+  }
+  
+  .fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  .title span {
+    color: #34d399;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .row input {
+    flex: 1;
+    min-width: 240px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: none;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #888;
+  }
+  
+  button {
+    align-self: flex-end;
+    padding: 0.8rem 2rem;
+    background-color: #32e44d;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #28c33f;
+  }
+  
+@media (max-width: 600px) {
+  .contactSection {
+    padding: 1rem 1rem;
+  }
+  
+}

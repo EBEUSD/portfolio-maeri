@@ -1,0 +1,50 @@
+.connect {
+  background-image: url("../../images/bgc-contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 6rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  transition: opacity 1.3s ease, transform 1.3s ease;
+  background-size: contain;
+}
+
+.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.title span {
+  color: #ffc107;
+}
+
+.text {
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+
+.connect {
+  background-image: url("../../images/Background-contact.jpg");
+  background-size: cover;
+}
+}

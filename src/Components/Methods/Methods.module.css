@@ -1,0 +1,75 @@
+.methodsSection {
+  background-color: #000;
+  padding: 6rem 2rem;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  gap: 2rem;
+  max-width: 1364px;
+  margin: 0 auto;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #111;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.method:hover {
+  background-color: white;
+  color: black;
+}
+
+.icon {
+  background-color: #1f1f1f;
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .method {
+    padding: 0.5rem 1rem;
+  }
+
+  .methodsSection {
+    padding: 2rem 0rem;
+  }
+
+  .icon {
+    font-size: 1rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    padding: 0.4rem;
+  }
+
+  .label {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,88 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #D3D3D3;
+}
+
+.textContainer {
+  max-width: 600px;
+  text-align: left;
+}
+
+.textContainer h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.textContainer p {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.imageWrapper {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom right, #a8edea, #fed6e3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.heroImage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tagList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  position: absolute;
+  height: 100%;
+  justify-content: center;
+}
+
+.tag {
+  padding: 0.4rem 2rem;
+  font-size: 25px;
+  border-radius: 12px;
+  font-weight: bold;
+  background: #e0e0e0;
+  color: #000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.text {
+  font-family: bold;
+  font-size: 17px;
+}
+
+.active {
+  background: #bbf7d0;
+}
+
+.inactive {
+  background: #e0e0e0;
+}

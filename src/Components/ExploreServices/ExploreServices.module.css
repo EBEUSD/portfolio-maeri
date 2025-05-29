@@ -1,0 +1,88 @@
+.exploreServices {
+  padding-top: 4rem;
+  max-width: 1364px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 3rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.number {
+  font-size: 1.9rem;
+  margin-right: 0.8rem;
+  width: 2rem;
+  text-align: right;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 0.8rem;
+}
+
+.label {
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  .title {
+    text-align: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+    justify-items: center;
+    padding-right: 20px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.4rem;
+  }
+
+  .number {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .line {
+    width: 30px;
+    height: 1px;
+    margin: 0.3rem 0;
+  }
+
+  .label {
+    white-space: normal;
+  }
+
+  .item {
+    font-size: 1.4rem;
+  }
+
+  .number {
+    font-size: 1.6rem;
+  }
+}

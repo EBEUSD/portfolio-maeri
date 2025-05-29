@@ -1,0 +1,106 @@
+.whyChooseMe {
+  padding: 0;
+  text-align: center;
+  color: #000;
+}
+
+.whyChooseMeHeader {
+  max-width: 1364px;
+  margin: auto;
+  display: flex;
+  background-color: #fff;
+}
+
+.whyChooseMeHeader h2 {
+  font-size: 2.2rem;
+}
+
+.backgroundOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+}
+
+.reasons {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/310/260/large_2x/top-view-of-a-person-working-on-a-laptop-free-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+  z-index: 0;
+}
+
+.reason {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.reason:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2b7a78;
+}
+
+.reason {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fadeInStagger1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.fadeInStagger2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+.fadeInStagger3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+.fadeOut {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+@media (max-width: 768px) {
+  .whyChooseMeHeader h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .whyChooseMeHeader {
+    display: flex;
+    justify-content: center;
+  }
+}
