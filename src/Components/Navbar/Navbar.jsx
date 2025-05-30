@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <div className={styles.container}>
@@ -15,11 +17,72 @@ const Navbar = () => {
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
         <ul className={`${styles.navLinks} ${menuOpen ? styles.showMenu : ""}`}>
-          <li><a href="#home" onClick={toggleMenu}>Home</a></li>
-          <li><a href="#about" onClick={toggleMenu}>About</a></li>
-          <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
-          <li><a href="#skills" onClick={toggleMenu}>Skills</a></li>
-          <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+          <li>
+            <Link
+              to="home"
+              smooth={true}
+              duration={800}
+              onClick={closeMenu}
+              className={styles.links}
+              activeClass={styles.selectedLink}
+              spy={true}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="about"
+              smooth={true}
+              duration={800}
+              onClick={closeMenu}
+              className={styles.links}
+              activeClass={styles.selectedLink}
+              spy={true}
+            >
+              About
+            </Link>
+          </li>
+         
+          <li>
+            <Link
+              to="skills"
+              smooth={true}
+              duration={800}
+              onClick={closeMenu}
+              className={styles.links}
+              activeClass={styles.selectedLink}
+              spy={true}
+            >
+              Skills
+            </Link>
+          </li>
+           <li>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={800}
+              onClick={closeMenu}
+              className={styles.links}
+              activeClass={styles.selectedLink}
+              spy={true}
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={800}
+              onClick={closeMenu}
+              className={styles.links}
+              activeClass={styles.selectedLink}
+              spy={true}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

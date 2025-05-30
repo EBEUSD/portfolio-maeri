@@ -1,7 +1,7 @@
 import styles from "./Hero.module.css";
 export default function Hero() {
   return (
-    <section className={styles.hero}>
+    <section  id="home" className={styles.hero}>
       <div className={styles.textContainer}>
         <h1>
           Explore Maeri Front-End <br /> Development <br /> Showcase

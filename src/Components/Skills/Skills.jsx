@@ -12,7 +12,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className={styles.skillsSection}>
+    <section id="skills" className={styles.skillsSection}>
       <div className={styles.background}>
         <motion.h2
           className={styles.title}

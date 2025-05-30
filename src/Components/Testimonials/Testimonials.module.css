@@ -4,7 +4,7 @@
   max-width: 1364px;
   text-align: center;
   margin: auto;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
 }
 
 .title {
@@ -17,56 +17,36 @@
 
 .carouselWrapper {
   position: relative;
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
   border-radius: 1.5rem;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   display: flex;
   justify-content: center;
+  overflow-x: auto;
 }
 
 .carousel {
   display: flex;
   gap: 1.5rem;
-  overflow: hidden;
-  min-height: 260px; 
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #10b981;
-  color: white;
-  border: 2px solid #000;
-  font-size: 1.5rem;
-  padding: 0.5rem 0.8rem;
-  border-radius: 0.75rem;
-  cursor: pointer;
-  z-index: 1;
-  transition: background-color 0.3s ease;
-}
-
-.arrow:hover {
-  background-color: #10b981;
-}
-
-.arrow:first-of-type {
-  left: 1rem;
-}
-
-.arrow:last-of-type {
-  right: 1rem;
-}
 .card {
   background-color: #ffffff;
   padding: 1.5rem;
   border-radius: 1.25rem;
   width: 300px;
-  min-width: 300px;
+  flex-shrink: 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
   border: 1px solid #e5e7eb;
-  flex-shrink: 0;
-  transition: transform 0.4s ease;
+  scroll-snap-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -107,16 +87,30 @@
 }
 
 .arrow {
-  background: none;
-  border: none;
-  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #10b981;
+  color: white;
+  border: 2px solid #000;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.75rem;
   cursor: pointer;
-  color: #6b7280;
-  transition: color 0.3s ease;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.arrow:first-of-type {
+  left: 1rem;
+}
+
+.arrow:last-of-type {
+  right: 1rem;
 }
 
 .arrow:hover {
-  color: #111827;
+  background-color: #0f9e6b;
 }
 
 .dots {
@@ -139,9 +133,32 @@
   background-color: #10b981;
 }
 
-
 @media (max-width: 600px) {
+  .container {
+    padding: 2rem 0rem;
+    border-radius: 0rem;
+  }
+
   .title {
     text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carouselWrapper {
+    padding: 2rem 0.5rem;
+    border-radius: 0;
+  }
+
+  .card {
+    width: 80vw;
   }
 }

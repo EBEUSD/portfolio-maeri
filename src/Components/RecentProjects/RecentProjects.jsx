@@ -66,7 +66,7 @@ export default function RecentProjects() {
   const projectsToShow = allProjects.slice(0, visibleCount);
 
   return (
-    <section className={styles.container}>
+    <section id="projects" className={styles.container}>
       <h2 className={styles.title}>Recent Projects</h2>
       <div className={styles.grid}>
         {projectsToShow.map((project, index) => {

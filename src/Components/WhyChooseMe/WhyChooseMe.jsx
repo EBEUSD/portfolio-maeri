@@ -31,13 +31,13 @@ const WhyChooseMe = () => {
   }, []);
 
   return (
-    <section className={styles.whyChooseMe} ref={sectionRef}>
+    <section id="about" className={styles.whyChooseMe} ref={sectionRef}>
       <div className={styles.whyChooseMeHeader}>
         <h2>Why choose me?</h2>
       </div>
 
       <div className={styles.reasons}>
-      <div className={styles.backgroundOverlay}></div>
+        <div className={styles.backgroundOverlay}></div>
         <div
           className={`${styles.reason} ${
             visible[0] ? styles.fadeInStagger1 : styles.fadeOut

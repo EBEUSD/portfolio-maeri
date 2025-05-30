@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -25,27 +26,76 @@ const Footer = () => {
         <div className={styles.links}>
           <ul>
             <li>
-              <a href="#">Introd</a>
+              <Link
+                to="home"
+                smooth={true}
+                duration={800}
+                className={styles.link}
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <a href="#">About</a>
+              <Link
+                to="about"
+                smooth={true}
+                duration={800}
+                className={styles.link}
+              >
+                About
+              </Link>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <Link
+                to="projects"
+                smooth={true}
+                duration={800}
+                className={styles.link}
+              >
+                Projects
+              </Link>
             </li>
             <li>
-              <a href="#">Career</a>
+              <Link
+                to="skills"
+                smooth={true}
+                duration={800}
+                className={styles.link}
+              >
+                Skills
+              </Link>
             </li>
             <li>
-              <a href="#">Reach out</a>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={800}
+                className={styles.link}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">Privacy Policy</a>
+              <Link
+                to="skills"
+                smooth={true}
+                duration={800}
+                className={styles.link}
+              >
+                Skills
+              </Link>
             </li>
             <li>
-              <a href="#">Terms of Service</a>
+              <Link
+                to="methods"
+                smooth={true}
+                duration={800}
+                className={styles.link}
+              >
+                Methods
+              </Link>
             </li>
           </ul>
         </div>
